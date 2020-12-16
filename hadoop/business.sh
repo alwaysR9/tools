@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # sh run.sh [INPUT_dict_system] [OUTPUT] [key_name_of_dict_system] [partition]
-source ../util.sh
+source ./util.sh
 set +x
 
 if [[ $# -ne 4 ]]; then
