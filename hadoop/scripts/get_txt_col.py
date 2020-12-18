@@ -24,8 +24,7 @@ def main():
         line = line.strip()
         p = line.split('\t')
         try:
-            l = p[1].split(':')
-            print ':'.join([l[int(i)] for i in keys])
+            print '\t'.join([p[int(i)] for i in keys])
         except Exception as exp:
             sys.stderr.write("[EXP] %s: %s\n" % (line, str(exp)))
             traceback.print_exc()
